@@ -14,7 +14,7 @@ if [ -d Overspark ]; then
 		fi		
 		touch /usr/local/bin/ibg
 		echo "#!/bin/sh\n" >> /usr/local/bin/ibg
-		echo "java -jar /usr/local/bin/ibg.jar $*" >> /usr/local/bin/ibg
+		echo 'java -jar /usr/local/bin/ibg.jar $*' >> /usr/local/bin/ibg
 		chmod a+x /usr/local/bin/ibg
 		echo "you have successfully installed IBatisGenerator!"
 	else
