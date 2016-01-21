@@ -6,7 +6,7 @@ if [ -d Overspark ]; then
 	echo "packaging IBatisGenerator with maven"
 	mvn package
 	if [ -d target ]; then
-		mv target/ibatis.generator-1.0-SNAPSHOT.jar /usr/local/bin/ibg.jar
+		mv target/ibatis.generator-1.0.jar /usr/local/bin/ibg.jar
 		cd ../..
 		rm -rf Overspark
 		if [ -f /usr/local/bin/ibg ]; then
