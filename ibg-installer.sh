@@ -4,9 +4,9 @@ git clone git@gitlab.alibaba-inc.com:lvxiang.lx/Overspark.git
 if [ -d Overspark ]; then
 	cd Overspark/IBatisGenerator
 	echo "packaging IBatisGenerator with maven..."
-	mvn package >/dev/null 2>&1
+	mvn clean package >/dev/null 2>&1
 	if [ -d target ]; then
-		mv target/ibatis.generator-1.0.jar /usr/local/bin/ibg.jar
+		mv target/ibatis.generator-1.0-jar-with-dependencies.jar /usr/local/bin/ibg.jar
 		cd ../..
 		rm -rf Overspark
 		if [ -f /usr/local/bin/ibg ]; then
